@@ -1,4 +1,4 @@
-# <KirbyWebpack>
+# Kirby
 www/kirby
 www/panel
 www/site/fields/previewfiles
@@ -8,4 +8,11 @@ www/site/plugins/simplemde
 www/site/plugins/images
 www/site/plugins/meta-tags
 www/site/plugins/prevnext
-# </KirbyWebpack>
+www/site/cache/
+
+# Logs
+*.log
+php-error.log
+
+# Dependency directories
+node_modules/
