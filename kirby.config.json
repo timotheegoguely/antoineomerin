@@ -2,8 +2,17 @@
   "modules": {
     "core": "https://github.com/getkirby/kirby.git",
     "panel": "https://github.com/getkirby/panel.git",
-    "fields": {},
-    "plugins": {},
+    "fields": {
+      "previewfiles": "https://github.com/brocessing/kirby-previewfiles.git",
+      "index-field": "https://github.com/jongacnik/kirby-index-field.git"
+    },
+    "plugins": {
+      "xml-sitemap": "https://github.com/pedroborges/kirby-xml-sitemap.git",
+      "simplemde": "https://github.com/medienbaecker/kirby-simplemde.git",
+      "images": "https://github.com/medienbaecker/kirby-images.git",
+      "meta-tags": "https://github.com/pedroborges/kirby-meta-tags.git",
+      "prevnext": "https://github.com/jenstornell/kirby-panel-prevnext.git"
+    },
     "tags": {},
     "widgets": {}
   }
