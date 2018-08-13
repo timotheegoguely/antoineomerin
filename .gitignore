@@ -1,0 +1,11 @@
+# <KirbyWebpack>
+www/kirby
+www/panel
+www/site/fields/previewfiles
+www/site/fields/index-field
+www/site/plugins/xml-sitemap
+www/site/plugins/simplemde
+www/site/plugins/images
+www/site/plugins/meta-tags
+www/site/plugins/prevnext
+# </KirbyWebpack>
