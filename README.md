@@ -12,8 +12,8 @@ Antoine Omerin portfolio website.
 
 ## Screenshots
 
-![Photo](/assets/screenshots/antoineomerin.fr-photo.gif)]
-![Video](/assets/screenshots/antoineomerin.fr-video.gif)]
-![À propos](/assets/screenshots/antoineomerin.fr-a-propos.gif)]
-![CV print](/assets/screenshots/antoineomerin.fr-cv-print.gif)]
-![Panel site](/assets/screenshots/antoineomerin.fr-panel-site.gif)]
+![Photo](/assets/screenshots/antoineomerin.fr-photo.gif)
+![Video](/assets/screenshots/antoineomerin.fr-video.gif)
+![À propos](/assets/screenshots/antoineomerin.fr-a-propos.gif)
+![CV print](/assets/screenshots/antoineomerin.fr-cv-print.gif)
+![Panel site](/assets/screenshots/antoineomerin.fr-panel-site.gif)
