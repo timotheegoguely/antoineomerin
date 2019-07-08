@@ -1,0 +1,13 @@
+title: Projets photo
+icon: 📷
+
+sections:
+  drafts:
+    extends: sections/photo
+    headline: Projets photo non publiés
+    status: draft
+
+  listed:
+    extends: sections/photo
+    headline: Projets photo publiés
+    status: listed

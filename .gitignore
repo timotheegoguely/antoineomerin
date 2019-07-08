@@ -1,18 +1,51 @@
-# Kirby
-www/kirby
-www/panel
-www/site/fields/previewfiles
-www/site/fields/index-field
-www/site/plugins/xml-sitemap
-www/site/plugins/simplemde
-www/site/plugins/images
-www/site/plugins/meta-tags
-www/site/plugins/prevnext
-www/site/cache/
+# System files
+# ------------
 
-# Logs
-*.log
-php-error.log
+Icon
+.DS_Store
 
-# Dependency directories
-node_modules/
+# Temporary files
+# ---------------
+
+/media/*
+!/media/index.html
+
+# Content files
+# ---------------
+
+/content/*
+
+# Fonts files
+# ---------------
+
+/assets/fonts/*
+
+# -------------SECURITY-------------
+# NEVER publish these files via Git!
+# -------------SECURITY-------------
+
+# Cache Files
+# ---------------
+
+/site/cache/*
+!/site/cache/index.html
+
+# Accounts
+# ---------------
+
+/site/accounts/*
+!/site/accounts/index.html
+
+# Sessions
+# ---------------
+
+/site/sessions/*
+!/site/sessions/index.html
+
+# License
+# ---------------
+/site/config/.license
+
+# Config
+# ---------------
+/site/config/config.php

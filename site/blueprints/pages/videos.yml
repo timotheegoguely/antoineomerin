@@ -1,0 +1,13 @@
+title: Projets vidéo
+icon: 🎬
+
+sections:
+  drafts:
+    extends: sections/video
+    headline: Projets vidéo non publiés
+    status: draft
+
+  listed:
+    extends: sections/video
+    headline: Projets vidéo publiés
+    status: listed

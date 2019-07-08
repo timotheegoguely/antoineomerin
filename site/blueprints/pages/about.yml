@@ -1,0 +1,165 @@
+title: À propos
+
+status:
+  draft: true
+  listed: true
+
+options:
+  url: false
+  delete: false
+
+tabs:
+  about:
+    label: À propos
+    columns:
+      - width: 2/3
+        fields:
+          description:
+            label: Description
+            type: text
+          bio:
+            label: Bio
+            type: textarea
+            size: small
+          credits:
+            label: Crédits
+            type: textarea
+            size: medium
+      - width: 1/3
+          fields:
+            photo:
+              label: Photo
+              type: files
+              multiple: false
+            birthdate:
+              label: Date de naissance
+              type: date
+              min: 1990
+            address:
+              label: Adresse
+              type: textarea
+            email:
+              label: Email
+              type: email
+            phone:
+              label: Téléphone
+              type: tel
+            instagram:
+              label: Instagram
+              type: text
+              icon: instagram
+        
+
+  cv:
+    label: CV
+    icon: document
+    columns:
+      - width: 1/1
+        sections:
+          content:
+            type: fields
+            fields:
+              experiences_professionelles:
+                label: Expériences professionnelles
+                type: structure
+                columns: 
+                  date_start: 
+                    width: 2/10      
+                  date_end: 
+                    width: 2/10
+                  description: 
+                    width: 5/10
+                  visible: 
+                    width: 1/10
+                sortBy: date_start desc
+                fields:
+                  date_start:
+                    label: Date de début
+                    type: date
+                    width: 1/3
+                    required: true
+                  date_end:
+                    label: Date de fin
+                    type: date
+                    width: 1/3
+                  visible:
+                    label: Visible
+                    type: toggle
+                    width: 1/3
+                  description:
+                    label: Description
+                    type: textarea
+                    size: small
+                    required: true
+
+              formation_diplomes:
+                label: Formation
+                type: structure
+                columns: 
+                  date_start: 
+                    width: 4/10      
+                  description: 
+                    width: 5/10
+                  visible:
+                    width: 1/10
+                sortBy: date_start desc
+                fields:
+                  date_start:
+                    label: Date de début
+                    type: date
+                    width: 1/2
+                    required: true
+                  date_end:
+                    label: Date de fin
+                    type: date
+                    width: 1/2
+                  description:
+                    label: Description
+                    type: textarea
+                    size: small
+                    required: true
+                  visible:
+                    label: Visible
+                    type: toggle
+                    width: 1/3
+
+              realisations_video:
+                label: Réalisations vidéo
+                type: structure
+                sortBy: date desc
+                columns: 
+                  date: 
+                    width: 4/10
+                  description: 
+                    width: 5/10
+                  visible: 
+                    width: 1/10
+                fields:
+                  date:
+                    label: Date
+                    type: date
+                    width: 4/4
+                  visible:
+                    label: Visible
+                    type: toggle
+                    width: 1/3
+                  description:
+                    label: Description
+                    type: textarea
+
+              competences:
+                label: Compétences
+                type: textarea
+                size: small
+
+      # - width: 1/3
+      #   sections:
+      #     pdf:
+      #       type: fields
+      #       fields:
+      #         pdf:
+      #           type: files
+      #           label: CV
+      #           max: 1
+      #           multiple: false
+      #           size: small

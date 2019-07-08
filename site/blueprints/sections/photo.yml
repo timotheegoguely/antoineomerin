@@ -1,0 +1,11 @@
+type: pages
+headline: Photo
+parent: site.find("photo")
+size: tiny
+info: "{{ page.images.count }} image(s)"
+layout: cards
+template: photo
+empty: Pas encore de projets photo
+image:
+  query: page.images.first
+info: "{{ page.date }} <br>{{ page.category }} <br>{{ page.images.filterBy('visible', '✓').count }}/{{ page.images.count }} image(s)"

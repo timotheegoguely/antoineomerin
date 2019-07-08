@@ -1,0 +1,42 @@
+title: Vidéo
+
+status:
+  draft: true
+  listed: true
+
+columns:
+  - width: 1/2
+    fields:
+      cover:
+        type: files
+        multiple: false
+        width: 1/2
+      date:
+        label: Date
+        type: number
+        icon: calendar
+        min: 2000
+        width: 1/4
+      featured:
+        label: Featured
+        type: toggle
+        width: 1/4
+      link:
+        label: Lien
+        type: url
+      synopsis:
+        label: Synopsis
+        type: textarea
+
+  - width: 1/2
+    sections:
+      images:
+        type: files
+        layout: cards
+        template: image
+        info: "{{ file.dimensions }}"
+        image:
+          ratio: 16/9
+          cover: true
+        min: 1
+        size: small

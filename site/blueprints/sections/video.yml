@@ -1,0 +1,13 @@
+type: pages
+headline: Vidéo
+parent: site.find("video")
+size: tiny
+layout: cards
+template: video
+empty: Pas encore de projets vidéo
+image:
+  query: page.images.first
+  cover: true
+  ratio: 16/9
+  back: black
+info: "{{ page.date }} <br>{{ page.images.count }} image(s)"

@@ -1,0 +1,212 @@
+.header {
+  margin-bottom: 1.75rem;
+}
+
+#cv {
+  width: 100%;
+  max-width: 21cm;
+  padding: 0.875rem;
+  line-height: 1.5rem;
+}
+
+#cv header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#cv header > #photo-name-description,
+#cv header > #address-contact { 
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#cv header > #photo-name-description > #name-description { 
+  width: 100%;
+}
+#cv header > #address-contact > #address,
+#cv header > #address-contact > #contact { 
+  width: 100%;
+}
+
+
+#cv header > div,
+#cv header > #address-contact > #address {
+  margin-bottom: 0.875rem;
+}
+
+#cv header > #address-contact {
+  padding-top: 0.125rem;
+}
+
+
+/* #photo */
+#cv header figure {
+  width: 3.5cm;
+  flex-shrink: 0;
+  align-self: flex-start;
+  height: 4.25rem;
+  margin-bottom: 1.75rem;
+}
+#cv header figure > img {
+  object-fit: cover;
+  height: 100%;
+  max-width: 4.25rem;
+}
+
+/* #name */
+#cv header h1 {
+  font-size: 1.25rem;
+}
+/* #description */
+#cv header h2 {
+  font-size: 1.25rem;
+}
+
+#cv section {
+  margin-top: 2.625rem;
+}
+
+#cv section h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+
+#cv h1,
+#cv h2,
+#cv h3 {
+  font-weight: 400 !important;
+}
+
+#cv section ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+#cv section .section__date {
+  font-family: 'ISO';
+  min-width: 3.5cm;
+  padding-right: 1em;
+}
+
+button#print {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 0.75rem 0.875rem;
+  background-color: var(--bg-color);
+  border: 1px solid var(--text-color);
+  font-size: 0.875rem;
+  color: var(--text-color);
+  display: none;
+}
+.icon-print {
+  margin-right: 0.5rem;
+  vertical-align: sub;
+}
+
+
+
+@media all and (min-width: 428px) {
+  #cv header {
+    flex-direction: row;
+  }
+  #cv header > #photo-name-description,
+  #cv header > #address-contact { 
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  #cv header > #address-contact > #address {
+    width: 3.5cm;
+  }
+  #cv header > #address-contact > #contact { 
+    width: 50%;
+  }
+  #cv header h2 {
+    max-width: 9em;
+  }
+  #cv header > #address-contact > #address {
+    padding-left: 0;
+  }
+  #cv section h3,
+  #cv #competences p {
+    padding-left: 3.5cm;
+  }
+  #cv section ul li {
+    flex-direction: row;
+  }
+}
+
+
+@media screen and (min-width: 660px) {
+
+  #cv header > #photo-name-description,
+  #cv header > #address-contact { 
+    width: 50%;
+  }
+  #cv header > #address-contact > #address {
+    width: 3.5cm;
+  }
+  #cv header > #address-contact > #contact { 
+    width: calc(100% - 3.5cm);
+  }
+  #cv section ul li {
+    flex-direction: row;
+  }
+  button#print { display: initial; }
+}
+
+
+/* Print */
+
+.show-on-print { display: none; }
+
+@media print {
+  html, body {
+    background-color: transparent;
+    font-size: 87.5%;
+    color: black !important;
+  }
+  .show-on-print { display: initial; }
+  .hide-on-print { display: none; }
+
+  #cv {
+    max-width: 100%;
+    padding: 0;
+  }
+  .header {
+    display: none;
+  }
+  .underline {
+    border-bottom: none;
+  }
+
+  #cv header > #photo-name-description,
+  #cv header > #address-contact { 
+    width: 50%;
+  }
+  #cv header > #address-contact > #address {
+    width: 3.5cm;
+  }
+  #cv section ul li {
+    flex-direction: row;
+  }
+}
+
+@media print and (orientation: landscape) {
+  #cv #sections {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 85vh;
+  }
+  #cv section {
+    width: 50%;
+  }
+  #cv #experiences_professionelles {
+    padding-right: 3.5rem;
+  }
+}

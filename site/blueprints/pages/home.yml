@@ -1,0 +1,17 @@
+title: Home
+
+options:
+  status: false
+
+sections:
+  info:
+    headline: Info
+    type: info
+    text: All content for the homepage is being pulled from the photo page.
+
+  photo:
+    headline: Projets
+    extends: sections/photo
+    status: listed
+
+
