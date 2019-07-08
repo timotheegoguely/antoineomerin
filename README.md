@@ -2,7 +2,7 @@
 
 [![](https://img.shields.io/badge/Kirby-3.2.0-f0c674.svg)](https://getkirby.com/)
 
-Antoine Omerin portfolio website: [antoineomerin.fr](http://antoineomerin.fr)
+Antoine Omerin portfolio website.
 
 ## Features
 
