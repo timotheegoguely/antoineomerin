@@ -1,6 +1,6 @@
 # Antoine Omerin
 
-[![](https://img.shields.io/badge/Kirby-3.2.0-f0c674.svg)](https://getkirby.com/)
+![Kirby Version](https://img.shields.io/badge/Kirby-3%2B-black.svg)
 
 Antoine Omerin portfolio website.
 
