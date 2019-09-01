@@ -164,11 +164,17 @@ button#print {
 
 .show-on-print { display: none; }
 
+@page { 
+  size: a4;
+  margin: 1cm;  
+}
+
 @media print {
   html, body {
     background-color: transparent;
     font-size: 87.5%;
     color: black !important;
+    margin: 0;
   }
   .show-on-print { display: initial; }
   .hide-on-print { display: none; }
