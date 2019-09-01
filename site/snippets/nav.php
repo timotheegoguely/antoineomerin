@@ -21,7 +21,7 @@ if($items->isNotEmpty()):
       </span>
     </li>
     <li class="nav__item" id="instagram" title="Instagram">
-      <a href="<?= $site->find('about')->instagram() ?>" target="_blank">
+      <a href="https://www.instagram.com/<?= $site->find('about')->instagram() ?>" target="_blank">
         <svg class="icon icon-instagram" xmlns="http://www.w3.org/2000/svg" fill="none" width="16" height="16" viewBox="0 0 16 16">
           <rect x="0.75" y="0.75" width="14.5" height="14.5" rx="4" stroke="currentColor" stroke-width="1.5"/>
           <circle cx="8" cy="8" r="3.25" stroke="currentColor" stroke-width="1.5"/>
