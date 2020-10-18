@@ -25,6 +25,9 @@
   </script>
   
   <link rel="preload" href="assets/fonts/ISOv0.7-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#F2F2F2">
+
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <?= css([
     'assets/css/index.min.css?'.filemtime('assets/css/index.min.css'),

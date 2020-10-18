@@ -1,0 +1,10 @@
+{
+  "short_name": "Antoine Omerin",
+  "name": "Antoine Omerin",
+  "description": "photographe vidéaste",
+  "start_url": "https://antoineomerin.fr",
+  "background_color": "#F2F2F2",
+  "theme_color": "#F2F2F2",
+  "display": "standalone",
+  "scope": "/"
+}
