@@ -17,10 +17,11 @@
 
 @font-face {
   font-family: 'ISO';
-  src: url('../fonts/ISOv0.5-Light.eot') format('eot'),
-       url('../fonts/ISOv0.5-Light.woff') format('woff');
+  src: url('../fonts/ISOv0.7-Light.woff2') format('woff2'),
+       url('../fonts/ISOv0.7-Light.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 html {
@@ -156,18 +157,20 @@ body {
   cursor: ew-resize;
 }
 #photo .slideshow-cell {
-  height: 100%;
+  height: calc(100vh - 7.5rem);
+  height: calc(calc(var(--vh, 1vh) * 100) - 7.5rem);
   padding: 0 1rem;
 }
 
 .slideshow-cell figure {
   width: 100%;
-  height: calc(100% - 48px - 1.5rem);
+  height: 100%;
 }
 
 @media screen and (min-width: 428px) {
   #photo .slideshow-cell {
     height: calc(100vh - 48px);
+    height: calc(calc(var(--vh, 1vh) * 100) - 48px);
   }
   .slideshow-cell figure {
     height: calc(100% - 48px);
@@ -323,6 +326,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-height: calc(100vh - 48px);
+  min-height: calc(calc(var(--vh, 1vh) * 100) - 48px);
 }
 
 #about #bio {
