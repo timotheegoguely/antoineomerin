@@ -7,6 +7,11 @@
 # http://yourdomain.com/about-us/team
 RewriteEngine on
 
+# redirect to https
+RewriteCond %{HTTP_HOST} ^antoineomerin\.fr [NC]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
 # make sure to set the RewriteBase correctly
 # if you are running the site in a subfolder.
 # Otherwise links or the entire site will break.
@@ -55,3 +60,20 @@ AddOutputFilterByType DEFLATE application/json
 AddOutputFilterByType DEFLATE application/javascript
 AddOutputFilterByType DEFLATE application/x-javascript
 </IfModule>
+
+# Enable Keep-Alive
+<ifModule mod_headers.c>
+Header set Connection keep-alive
+</ifModule>
+
+# cache settings
+# one year for image files
+<filesMatch ".(jpg|jpeg|png|gif|ico|woff2|woff)$">
+Header set Cache-Control "max-age=31536000, public"
+</filesMatch>
+# one month = 2628000
+# 200 seconds for css and js
+<filesMatch ".(css|js)$">
+Header set Cache-Control "max-age=200, public"
+</filesMatch>
+
