@@ -15,7 +15,7 @@
 
         <div class="slideshow-cell">
           <figure>
-            <img data-flickity-lazyload="<?= $image->url() ?>" alt="<?= $image->caption() ?>">
+            <img data-flickity-lazyload="<?= $image->url() ?>" width="<?= $image->width() ?>" height="<?= $image->height() ?>" alt="<?= $image->caption() ?>">
             <figcaption class="js-hide-when-inactive"><?= $page->title() ?><?php if ($image->caption()->isNotEmpty()) { echo ", ".$image->caption(); } ?>, <?= '<time datetime="'.$page->date().'">'.$page->date()->toDate('Y').'</time>' ?><?php if ($count > 1) { echo ", ".$index."/".$count; } ?></figcaption>
           </figure>
         </div>

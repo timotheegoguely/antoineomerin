@@ -18,7 +18,7 @@
           <?php foreach($screenshots as $screenshot): ?>
           <div class="slideshow-cell">
             <figure class="aspect-ratio-1920-1200">
-              <img data-flickity-lazyload="<?= $screenshot->url() ?>" alt="<?= $screenshot->alt() ?>">
+              <img data-flickity-lazyload="<?= $screenshot->url() ?>" width="<?= $screenshot->width() ?>" height="<?= $screenshot->height() ?>" alt="<?= $screenshot->alt() ?>">
             </figure>
           </div>
           <?php endforeach ?>
@@ -36,7 +36,7 @@
           <figure>
             <div class="aspect-ratio-1920-1200">
               <?php $cover = $video->images()->first(); ?>
-              <img src="<?= $cover->url() ?>" alt="<?= $cover->alt() ?>">
+              <img src="<?= $cover->url() ?>" width="<?= $cover->width() ?>" height="<?= $cover->height() ?>" alt="<?= $cover->alt() ?>">
             </div>
             <figcaption>
               <h2><?= $video->title() ?>, <?= $video->date() ?></h2>
